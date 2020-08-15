@@ -3,7 +3,15 @@ const todoInput = document.querySelector(".todo-input");
 const todoButton = document.querySelector(".todo-button");
 const todoList = document.querySelector(".todo-list");
 const response = document.querySelector(".aleluya");
-const frases = ["hola"];
+const frases = [
+  "Aleluya!!!",
+  "Gloria!!!!",
+  "Recíbelo!!!",
+  "Siéntelo",
+  "Alábalo!!!",
+  "ya viene",
+  "Alaba!!!!",
+];
 
 // Event listeners
 todoButton.addEventListener("click", addTodo);
