@@ -4,12 +4,13 @@ const todoButton = document.querySelector(".todo-button");
 const todoList = document.querySelector(".todo-list");
 const response = document.querySelector(".aleluya");
 const frases = [
-  "aleluya!!!",
-  "gloria!!!!",
-  "recíbelo!!!",
-  "siéntelo",
-  "alábalo!!!",
+  "Aleluya!!!",
+  "Gloria!!!!",
+  "Recíbelo!!!",
+  "Siéntelo",
+  "Alábalo!!!",
   "ya viene",
+  "Alaba!!!!",
 ];
 
 // Event listeners
