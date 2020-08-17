@@ -18,12 +18,17 @@ todoButton.addEventListener("click", addTodo);
 
 // Functions
 function addTodo(event) {
-  // prevent form from submitting
-  event.preventDefault();
-  // Select esponse after prayer:
-  const alaba = frases[Math.floor(Math.random() * frases.length)];
-  // Display response after prayer:
-  response.innerText = alaba;
-  //   clear  input value:
-  todoInput.value = "";
+  if (todoInput.value == "") {
+    alert("recuerda escribir tu plegaria en el espacio en blanco");
+    return false;
+  } else {
+    // prevent form from submitting
+    event.preventDefault();
+    // Select esponse after prayer:
+    const alaba = frases[Math.floor(Math.random() * frases.length)];
+    // Display response after prayer:
+    response.innerText = alaba;
+    //   clear  input value:
+    todoInput.value = "";
+  }
 }
