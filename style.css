@@ -69,10 +69,10 @@ button:hover {
   font-size: calc(2rem + 0.5vw);
   justify-content: space-between;
   opacity: 0;
+  transition: all 1.6s ease;
 }
 
 .animation {
   font-size: calc(3rem + 0.5vw);
   opacity: 1;
-  transition: all 1.6s ease;
 }
