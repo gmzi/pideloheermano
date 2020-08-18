@@ -68,4 +68,11 @@ button:hover {
 .aleluya {
   font-size: calc(2rem + 0.5vw);
   justify-content: space-between;
+  opacity: 0;
+}
+
+.animation {
+  font-size: calc(5rem + 0.5vw);
+  opacity: 1;
+  transition: all 1.6s ease;
 }

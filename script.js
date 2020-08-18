@@ -11,6 +11,10 @@ const frases = [
   "Alábalo!!!",
   "ya viene",
   "Alaba!!!!",
+  "Loado!!!!",
+  "será",
+  "ten fe",
+  "abrázalo!!!!",
 ];
 
 // Event listeners
@@ -25,9 +29,10 @@ function addTodo(event) {
     // prevent form from submitting
     event.preventDefault();
     // Select esponse after prayer:
-    const alaba = frases[Math.floor(Math.random() * frases.length)];
+    const alaba = frases[Math.floor(Math.random(0, 10) * frases.length)];
     // Display response after prayer:
     response.innerText = alaba;
+    response.classList.add("animation");
     //   clear  input value:
     todoInput.value = "";
   }
