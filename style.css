@@ -73,14 +73,19 @@ form {
 100% {opacity:1;}
 } 
 
-textarea,
 button {
-  margin: 0 3px;
+  margin: 0 5px;
   padding: 0.3rem 0.3rem;
   font-size: calc(0.8rem + 0.5vw);
   background: white;
   border-radius: 0.5rem;
   display: flex;
+
+  color: #dd613f;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: solid white;
 }
 
 #button-inner-text {
@@ -89,16 +94,10 @@ button {
 
 textarea {
   font-family: "Poppins", sans-serif;
-  font-size: calc(0.5rem + 0.5vw);
+  font-size: calc(0.3rem + 1vw);
+  text-align: center;
 }
 
-button {
-  color: #dd613f;
-  background: white;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border: solid white;
-}
 
 button:hover {
   background: #d88771;
@@ -134,5 +133,5 @@ button:hover {
 
 .palabras-quedan-container i {
   font-size: 2rem;
-  margin: 0;
+  margin: 10px;
 }
