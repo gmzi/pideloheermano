@@ -11,6 +11,11 @@ body {
   min-height: 100vh;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 header {
   font-size: calc(1rem + 0.5vw);
 }
@@ -30,19 +35,61 @@ form {
   margin: 1rem;
 }
 
-h2 {
+.escribe {
   font-size: calc(0.8rem + 0.5vw);
   text-align: center;
-  margin: 1rem;
+  margin: 0;
 }
 
-input,
+.palabras-quedan {
+  font-size: 1.5rem;
+  opacity: 1;
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s; 
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+} 
+
+textarea,
 button {
   margin: 0 3px;
-  padding: 0.5rem 0.5rem;
+  padding: 0.3rem 0.3rem;
   font-size: calc(0.8rem + 0.5vw);
   background: white;
   border-radius: 0.5rem;
+  display: flex;
+}
+
+#button-inner-text {
+  margin-right: 10px;
+}
+
+textarea {
+  font-family: "Poppins", sans-serif;
+  font-size: calc(0.5rem + 0.5vw);
 }
 
 button {
@@ -69,10 +116,23 @@ button:hover {
   font-size: calc(2rem + 0.5vw);
   justify-content: space-between;
   opacity: 0;
-  transition: all 1.6s ease;
+  transition: all 10.6s ease;
 }
 
 .animation {
   font-size: calc(3rem + 0.5vw);
   opacity: 1;
+}
+
+#todo-input {
+  color: red;
+}
+
+.palabras-quedan-container {
+  text-align: center;
+}
+
+.palabras-quedan-container i {
+  font-size: 2rem;
+  margin: 0;
 }
