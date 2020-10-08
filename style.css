@@ -113,6 +113,10 @@ button {
 }
 
 textarea {
+  border: 1px solid yellow;
+  outline-style: dotted;
+  outline-color: rgb(254, 230, 205);
+  background-color: rgb(249, 235, 209);
   font-family: "Poppins", sans-serif;
   font-size: calc(0.3rem + 1vw);
 }
