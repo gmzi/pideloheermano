@@ -45,33 +45,53 @@ form {
   font-size: 1.5rem;
   opacity: 1;
   animation: fadeIn ease 5s;
-  -webkit-animation: fadeIn ease 5s; 
+  -webkit-animation: fadeIn ease 5s;
 }
 
 @keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}
 
 @-moz-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-o-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-ms-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
-} 
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 button {
   margin: 0 5px;
@@ -93,11 +113,14 @@ button {
 }
 
 textarea {
+  border: 1px solid yellow;
+  outline-style: dotted;
+  outline-color: rgb(254, 230, 205);
+  background-color: rgb(249, 235, 209);
   font-family: "Poppins", sans-serif;
   font-size: calc(0.3rem + 1vw);
   text-align: center;
 }
-
 
 button:hover {
   background: #d88771;
